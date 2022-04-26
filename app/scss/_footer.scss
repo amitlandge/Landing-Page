@@ -1,0 +1,47 @@
+.footer{
+    padding: 2%;
+    width: 100vw;
+    background-color: rgb(44, 44, 67);
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5%;
+    .footer_col{
+        // margin: 2%;
+        width: 22%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+       h1{
+           font-size: 4vmin;
+           font-weight: 500;
+           margin: 5%;
+       }
+       .logos{
+        font-size: 4vmin;
+        font-weight: 500;
+        // padding: 5%;
+        i{
+            padding: 5px;
+        }
+       }
+       a{
+           padding: 5px;
+           text-decoration: none;
+           color: aliceblue;
+       }
+
+}
+}
+// @media only screen and (max-width: 950px) {
+// .footer{
+//     display: flex;
+//     flex-direction: column;
+//     .footer_col{
+//         flex: 100%;
+//     }
+// }
+// }

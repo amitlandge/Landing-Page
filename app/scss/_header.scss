@@ -1,0 +1,56 @@
+header {
+    background-color: white;
+    position: sticky;
+  .logo {
+    padding: 15px 10px;
+    svg {
+      padding: 5px;
+    }
+  }
+  .hamburger {
+    padding: 15px 20px;
+    position: absolute;
+    top: 0%;
+    right: 3%;
+    cursor: pointer;
+    width: 30px;
+    span {
+      width: 30px;
+      height: 4px;
+      background-color: rgb(58, 56, 56);
+      margin: 5px 0px;
+    }
+    // display: none;
+    // visibility: hidden;
+  }
+  .navbar_links {
+    margin: 20px 0px;
+    a {
+      text-decoration: none;
+      color: rgb(82, 78, 78);
+      margin: 5px 30px;
+      font-size: 2vmin;
+      padding-bottom: 4px;
+    }
+    a:hover {
+      border-bottom: 2px solid rgb(48, 126, 48);
+      color: black;
+    }
+    .primary_btn {
+        padding: 6px 15px;
+        border-radius: 2px;
+        outline: none;
+        border: none;
+        background: linear-gradient(to left, rgb(87, 176, 87), rgb(71, 203, 71));
+        color: aliceblue;
+        font-size: 2vmin;
+        cursor: pointer;
+      }
+      .primary_btn:hover{
+          border-bottom: none;
+          color: aliceblue;
+          opacity: 0.7;
+      }
+  }
+  
+}

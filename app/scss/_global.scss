@@ -1,0 +1,22 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    // background-color: burlywood;
+ 
+  
+}
+.flex{
+    display: flex;
+    &-jc-center{
+        justify-content: center;
+
+    }
+    &-ai-center{
+        align-items: center;
+    }
+    &-jc-space-between{
+      justify-content: space-between;
+    }
+}

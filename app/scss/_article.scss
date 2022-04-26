@@ -1,0 +1,86 @@
+.article_sec{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    // align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    h1{
+        font-size: 6vmin;
+        margin: 3% 4%;
+        color: rgb(37, 35, 35);
+        font-weight: 500;
+    }
+    .cards{
+        width: 100%;
+        // margin: 3% 4%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-items: center;
+        .card1{
+            flex: 20%;
+            
+            // margin:0px 2%;
+            padding: 10px 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            // border: 1px solid gray;
+            // margin: 5%;
+            
+            img{
+                width: 70%;
+                object-fit: cover;
+                // border: 2px solid rgb(14, 13, 13);
+                border-radius: 2px;
+               
+            }
+            p{
+                width: 70%;
+                margin: 0%;
+                // text-align: center;
+                font-size: 2.2vmin;
+            }
+            h3{
+                width: 70%;
+                // background: #000;
+                margin-top: 10px;
+                // margin: 0%;
+                font-size: 2.5vmin;
+                font-weight: 600;
+                color: rgb(20, 20, 20);
+                text-decoration: underline;
+                cursor: pointer;
+            }
+        }
+    }
+
+}
+@media only screen and (max-width: 800px) {
+    .article_sec{
+        width: 100vw;
+        h1{
+            text-align: center;
+        }
+        .cards{
+            flex-direction: column;
+            .card1{
+              p{
+                  width: 50%;
+              }
+              h3{
+                  width: 50%;
+              }
+                img{
+                    width: 50%;
+                }
+            }
+        }
+    }
+}
