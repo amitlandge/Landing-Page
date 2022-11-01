@@ -3,7 +3,12 @@ body {
   padding: 0%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+}
+
+html {
+  font-size: 62.2%;
 }
 
 .flex {
@@ -37,38 +42,41 @@ header {
 }
 
 header .logo {
-  padding: 15px 10px;
+  padding: 1.5rem 1rem;
+  z-index: 300;
 }
 
 header .logo svg {
   padding: 5px;
+  width: 20rem;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 header .hamburger {
-  padding: 15px 20px;
+  padding: 1.5rem 2rem;
   position: absolute;
   top: 0%;
   right: 3%;
   cursor: pointer;
-  width: 30px;
+  width: 3rem;
 }
 
 header .hamburger span {
-  width: 30px;
+  width: 3rem;
   height: 4px;
   background-color: #3a3838;
   margin: 5px 0px;
 }
 
 header .navbar_links {
-  margin: 20px 0px;
+  margin: 2rem 0px;
 }
 
 header .navbar_links a {
   text-decoration: none;
   color: #524e4e;
-  margin: 5px 30px;
-  font-size: 2vmin;
+  margin: 0.5rem 3rem;
   padding-bottom: 4px;
 }
 
@@ -78,14 +86,13 @@ header .navbar_links a:hover {
 }
 
 header .navbar_links .primary_btn {
-  padding: 6px 15px;
+  padding: 0.5rem 1.5rem;
   border-radius: 2px;
   outline: none;
   border: none;
   background: -webkit-gradient(linear, right top, left top, from(#57b057), to(#47cb47));
   background: linear-gradient(to left, #57b057, #47cb47);
   color: aliceblue;
-  font-size: 2vmin;
   cursor: pointer;
 }
 
@@ -96,6 +103,9 @@ header .navbar_links .primary_btn:hover {
 }
 
 @media only screen and (max-width: 1000px) {
+  html {
+    font-size: 50%;
+  }
   .navbar_links {
     position: absolute;
     top: 50%;
@@ -113,19 +123,23 @@ header .navbar_links .primary_btn:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    visibility: hidden;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+    -webkit-transform: translateY(-200%);
+            transform: translateY(-200%);
     background-color: whitesmoke;
     border-radius: 5px;
-    padding: 15px;
+    padding: 1.5rem;
   }
   .navbar_links a {
-    padding: 20px 5px;
+    padding: 2rem 0.5rem;
   }
   .navbar_links button {
-    margin-top: 10px;
+    margin-top: 1rem;
   }
   .active {
-    visibility: visible;
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
   }
   .open span:nth-child(1) {
     -webkit-transform: rotate(50deg);
@@ -156,6 +170,9 @@ header .navbar_links .primary_btn:hover {
 }
 
 @media only screen and (max-width: 800px) {
+  html {
+    font-size: 45%;
+  }
   .hero_sec {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -163,15 +180,27 @@ header .navbar_links .primary_btn:hover {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .hero_sec .right_content {
-    -webkit-box-flex: 100%;
-        -ms-flex: 100%;
-            flex: 100%;
+  .hero_sec .right_content > img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .hero_sec .left_content {
     -webkit-box-flex: 100%;
         -ms-flex: 100%;
             flex: 100%;
+  }
+  .card {
+    width: 50%;
+    padding: 2rem;
+    -webkit-box-shadow: 0rem 0.5rem 1rem rgba(27, 27, 27, 0.4);
+            box-shadow: 0rem 0.5rem 1rem rgba(27, 27, 27, 0.4);
+    margin-bottom: 3rem;
+  }
+  .content1 {
+    width: 80%;
+    text-align: center;
+    margin: 0% auto;
   }
 }
 
@@ -195,26 +224,26 @@ header .navbar_links .primary_btn:hover {
 }
 
 .hero_sec .left_content h1 {
-  font-size: 8vmin;
+  font-size: 6rem;
   font-weight: 300;
   letter-spacing: 1px;
   margin: 0%;
 }
 
 .hero_sec .left_content p {
-  font-size: 2.4vmin;
+  font-size: 2rem;
   letter-spacing: 1px;
 }
 
 .hero_sec .left_content .primary_btn {
-  padding: 6px 15px;
+  padding: 0.5rem 1.5rem;
   border-radius: 2px;
   outline: none;
   border: none;
   background: -webkit-gradient(linear, right top, left top, from(#57b057), to(#47cb47));
   background: linear-gradient(to left, #57b057, #47cb47);
   color: aliceblue;
-  font-size: 2vmin;
+  font-size: 2rem;
   cursor: pointer;
 }
 
@@ -250,8 +279,15 @@ header .navbar_links .primary_btn:hover {
   margin: 2% 5%;
 }
 
+@media only screen and (max-width: 800px) {
+  .content_sec .content1 {
+    width: 80%;
+    margin: 2% auto;
+  }
+}
+
 .content_sec .content1 h1 {
-  font-size: 6vmin;
+  font-size: 5rem;
   color: #3f3c3c;
   font-weight: 300;
   margin: 0%;
@@ -314,7 +350,7 @@ header .navbar_links .primary_btn:hover {
 
 .content_sec .cards .card h2 {
   margin: 0%;
-  font-size: 4vmin;
+  font-size: 3rem;
   font-weight: 400;
   color: #3d3a3a;
 }
@@ -350,7 +386,7 @@ header .navbar_links .primary_btn:hover {
 }
 
 .article_sec h1 {
-  font-size: 6vmin;
+  font-size: 5rem;
   margin: 3% 4%;
   color: #252323;
   font-weight: 500;
@@ -378,7 +414,7 @@ header .navbar_links .primary_btn:hover {
   -webkit-box-flex: 20%;
       -ms-flex: 20%;
           flex: 20%;
-  padding: 10px 15px;
+  padding: 1rem 1.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -411,8 +447,8 @@ header .navbar_links .primary_btn:hover {
 
 .article_sec .cards .card1 h3 {
   width: 70%;
-  margin-top: 10px;
-  font-size: 2.5vmin;
+  margin-top: 1rem;
+  font-size: 2rem;
   font-weight: 600;
   color: #141414;
   text-decoration: underline;
@@ -445,7 +481,7 @@ header .navbar_links .primary_btn:hover {
 
 .footer {
   padding: 2%;
-  width: 100vw;
+  width: 100%;
   background-color: #2c2c43;
   color: white;
   display: -webkit-box;
@@ -458,7 +494,7 @@ header .navbar_links .primary_btn:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 5%;
+  gap: 3rem;
 }
 
 .footer .footer_col {
@@ -479,13 +515,13 @@ header .navbar_links .primary_btn:hover {
 }
 
 .footer .footer_col h1 {
-  font-size: 4vmin;
+  font-size: 3rem;
   font-weight: 500;
   margin: 5%;
 }
 
 .footer .footer_col .logos {
-  font-size: 4vmin;
+  font-size: 3rem;
   font-weight: 500;
 }
 

@@ -1,70 +1,69 @@
-.content_sec{
-    width: 100vw;
-    height: auto;
+.content_sec {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  justify-content: center;
+  overflow: hidden;
+  .content1 {
+    width: 60%;
+    margin: 2% 5%;
+    @media only screen and (max-width: 800px) {
+      width: 80%;
+      margin: 2% auto;
+    }
+
+    h1 {
+      font-size: 5rem;
+      color: rgb(63, 60, 60);
+      font-weight: 300;
+      margin: 0%;
+      letter-spacing: 1px;
+    }
+    p {
+      letter-spacing: 0.7px;
+    }
+  }
+  .cards {
+    width: 100%;
+    margin: 0% 4%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
     flex-wrap: wrap;
-    // align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    .content1{
-        width: 60%;
-        margin: 2% 5%;
-        
-        h1{
-            font-size: 6vmin;
-            color: rgb(63, 60, 60);
-            font-weight: 300;
-            margin: 0%;
-            letter-spacing: 1px;
-        }
-        p{
-            letter-spacing: 0.7px;
-        }
+    align-items: center;
+    .card {
+      flex: 25%;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-wrap: wrap;
+
+      svg {
+        width: 100px;
+        height: 90px;
+      }
+      p {
+        width: 80%;
+      }
+      h2 {
+        margin: 0%;
+        font-size: 3rem;
+        font-weight: 400;
+        color: rgb(61, 58, 58);
+      }
     }
-    .cards{
-        width: 100%;
-        margin: 0% 4%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        align-items: center;
-        .card{
-            flex: 25%;
-            
-            // margin:0px 2%;
-            // padding: 10px 15px;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            align-items: flex-start;
-            flex-wrap: wrap;
-            // border: 1px solid gray;
-            // margin: 5%;
-            svg{
-                width: 100px;
-                height: 90px;
-            }
-            p{
-                width: 80%;
-                // text-align: center;
-            }
-            h2{
-                margin: 0%;
-                font-size: 4vmin;
-                font-weight: 400;
-                color: rgb(61, 58, 58);
-            }
-        }
-    }
+  }
 }
 @media only screen and (max-width: 800px) {
-    .content_sec{
-        width: 100vw;
-        .cards{
-            flex-direction: column;
-
-        }
+  .content_sec {
+    width: 100vw;
+    .cards {
+      flex-direction: column;
     }
+  }
 }

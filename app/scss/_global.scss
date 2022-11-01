@@ -1,22 +1,22 @@
-body{
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    // background-color: burlywood;
- 
-  
+body {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
 }
-.flex{
-    display: flex;
-    &-jc-center{
-        justify-content: center;
-
-    }
-    &-ai-center{
-        align-items: center;
-    }
-    &-jc-space-between{
-      justify-content: space-between;
-    }
+html {
+  font-size: 62.2%;
+}
+.flex {
+  display: flex;
+  &-jc-center {
+    justify-content: center;
+  }
+  &-ai-center {
+    align-items: center;
+  }
+  &-jc-space-between {
+    justify-content: space-between;
+  }
 }

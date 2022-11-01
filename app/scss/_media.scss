@@ -1,7 +1,8 @@
 @media only screen and (max-width: 1000px) {
+  html {
+    font-size: 50%;
+  }
   .navbar_links {
-    //   margin: 20px 10px;
-    //   background-color: cadetblue;
     position: absolute;
     top: 50%;
     display: flex;
@@ -10,24 +11,25 @@
     justify-content: center;
     align-items: center;
     a {
-      padding: 20px 5px;
+      padding: 2rem 0.5rem;
     }
     button {
-      margin-top: 10px;
+      margin-top: 1rem;
     }
-    visibility: hidden;
+    
+    transition: all 0.4s;
+    transform: translateY(-200%);
     background-color: whitesmoke;
     border-radius: 5px;
-    padding: 15px;
+    padding: 1.5rem;
   }
   .active {
-    visibility: visible;
+  
+    transform: translateY(0%);
   }
 
   .open {
     span:nth-child(1) {
-      // transform-origin: center;
-      //   background-color: aqua;
       transform: rotate(50deg);
       position: relative;
       top: 9px;
@@ -39,7 +41,6 @@
       display: none;
     }
     span:last-child {
-      // transform-origin: center;
       transform: rotate(-50deg);
       transition: all 0.5s ease-in-out;
     }
@@ -53,16 +54,30 @@
   }
 }
 @media only screen and (max-width: 800px) {
+  html{
+    font-size: 45%;
+  }
   .hero_sec {
     display: flex;
     flex-wrap: wrap;
-    .right_content {
-      // display: none;
-      flex: 100%;
+
+    .right_content > img {
+      width: 100%;
+      object-fit: cover;
     }
     .left_content {
       flex: 100%;
     }
   }
-  
+  .card {
+    width: 50%;
+    padding: 2rem;
+    box-shadow: 0rem 0.5rem 1rem rgba(27, 27, 27,0.4);
+    margin-bottom: 3rem;
+  }
+  .content1{
+    width: 80%;
+  text-align: center;
+  margin: 0% auto;
+  }
 }

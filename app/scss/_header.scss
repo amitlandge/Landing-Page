@@ -2,34 +2,36 @@ header {
     background-color: white;
     position: sticky;
   .logo {
-    padding: 15px 10px;
+    padding: 1.5rem 1rem;
     svg {
       padding: 5px;
+      width: 20rem;
+      object-fit: cover;
     }
+    z-index: 300;
   }
   .hamburger {
-    padding: 15px 20px;
+    padding: 1.5rem 2rem;
     position: absolute;
     top: 0%;
     right: 3%;
     cursor: pointer;
-    width: 30px;
+    width: 3rem;
     span {
-      width: 30px;
+      width: 3rem;
       height: 4px;
       background-color: rgb(58, 56, 56);
       margin: 5px 0px;
     }
-    // display: none;
-    // visibility: hidden;
+    
   }
   .navbar_links {
-    margin: 20px 0px;
+    margin: 2rem 0px;
     a {
       text-decoration: none;
       color: rgb(82, 78, 78);
-      margin: 5px 30px;
-      font-size: 2vmin;
+      margin: 0.5rem 3rem;
+     
       padding-bottom: 4px;
     }
     a:hover {
@@ -37,13 +39,13 @@ header {
       color: black;
     }
     .primary_btn {
-        padding: 6px 15px;
+        padding: 0.5rem 1.5rem;
         border-radius: 2px;
         outline: none;
         border: none;
         background: linear-gradient(to left, rgb(87, 176, 87), rgb(71, 203, 71));
         color: aliceblue;
-        font-size: 2vmin;
+        
         cursor: pointer;
       }
       .primary_btn:hover{
